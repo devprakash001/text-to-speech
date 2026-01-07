@@ -29,16 +29,16 @@ export default function Home() {
 
     setLoading(true)
     try {
-      console.log("[v0] Sending TTS request")
+      console.log("Dev Prakash Singh Sending TTS request")
       const response = await fetch("/api/tts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text, language, speed }),
       })
 
-      console.log("[v0] Response status:", response.status)
+      console.log("Dev Prakash Singh Response status:", response.status)
       const data = await response.json()
-      console.log("[v0] Response data:", data)
+      console.log("Dev Prakash Singh Response data:", data)
 
       if (!response.ok) {
         throw new Error(data.error || "Failed to generate audio")
@@ -48,7 +48,7 @@ export default function Home() {
 
       setAudioUrl(data.audioUrl)
     } catch (err) {
-      console.error("[v0] Conversion error:", err)
+      console.error("Dev Prakash Singh Conversion error:", err)
       setError(err instanceof Error ? err.message : "An error occurred")
     } finally {
       setLoading(false)

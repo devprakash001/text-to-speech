@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Text to Speech - Free Audio Converter",
   description: "Convert text to natural-sounding speech in English or Hindi. Free, no API keys required.",
-  generator: "v0.app",
+  generator: "Dev Prakash Singh",
   icons: {
     icon: [
       {
